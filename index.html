@@ -2,8 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Student homepage showcasing projects and courses."
+    />
+    <meta name="author" content="Daniel McKenna" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | Student Portfolio</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Site Logo" />
+        <span>Your Name</span>
+      </div>
+      <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">Chamber Project</a></li>
+          <li><a href="#">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! My name is <strong>Your Name</strong>. I’m 32 years old, married,
+          and a proud parent of one child—with another on the way.
+          Professionally, I work as a
+          <strong>Senior Integrations Engineer</strong>, where I focus on
+          building seamless connections between complex systems and making
+          technology work smarter together.
+        </p>
+        <p>
+          I’m currently continuing my education to earn that all-important
+          “piece of paper.” While my career has already given me a wealth of
+          hands-on experience, I’m pursuing this degree to formalize my
+          knowledge, strengthen my foundation in web and computer programming,
+          and keep pushing my skills forward.
+        </p>
+      </section>
+
+      <section id="photo">
+        <h2>Student Photo</h2>
+        <img src="images/me.jpg" alt="Student Photo" />
+      </section>
+
+      <section id="certificate">
+        <h2>Web Certificate Courses</h2>
+        <div class="filters">
+          <button id="all">All Courses</button>
+          <button id="wdd">WDD Courses</button>
+          <button id="cse">CSE Courses</button>
+        </div>
+        <div id="courses-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href="https://github.com/MysticMuffin-DevLogs" target="_blank"
+          >GitHub</a
+        >
+        |
+        <a href="https://www.linkedin.com/in/dmckenna15/" target="_blank"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      </div>
+      <p>&copy; <span id="currentyear"></span> | Your Name | Your Country</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
